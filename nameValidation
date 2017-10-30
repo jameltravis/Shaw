@@ -1,0 +1,18 @@
+# Write a small program to ask for a nmae and an age.
+# When both values have been entered, check if the person
+# is over 18 but under 31. The validation is to see if
+#  they are able to go on an exclusive 18 - 31 vacation
+# if they are able to go, welcome to the 'holiday'
+# otherwise print them a polite refusal to enter the party
+
+
+def holidayAccess():
+    name = input("what is your name? " )
+    age = int(input("How old are you, {}? ".format(name)))
+    if 18 <= age <= 30:
+        print("Welcome {}, to the greatest holiday ever planned!".format(name))
+    else:
+        print("Sorry, {}... I'm going to have to ask you to leave.".format(name))
+
+holidayAccess()
+
